@@ -45,6 +45,8 @@ def search():
 	# add search parameters
 	url += 't=' + title + '&'
 
+	url += 'type=' + item_type + '&'
+
 	if(item_type == 'episode'):
 		url += 'season=' + season + '&' + 'episode=' + episode
 
